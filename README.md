@@ -10,13 +10,13 @@ Assignment
     Create a blank HTML document with a script tag. This game is going to be played completely from the console, so don’t worry about putting anything else in there.
     Your game is going to play against the computer, so begin with a function called computerPlay that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’. We’ll use this function in the game to make the computer’s play.
 
-    (  const randomElement = array[Math.floor(Math.random() * array.length)];
-    
+  This blog information enabled me to create random selector function:
+    (  const randomElement = array[Math.floor(Math.random() * array.length)]; 
     const months = ["January", "February", "March", "April", "May", "June", "July"];
-
     const random = Math.floor(Math.random() * months.length);
+    console.log(random, months random in sq brkts);   )
 
-    console.log(random, months[random]);   )
+    "Create function that randomly returns Rock or Paper or Scissor"
 
     Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
         Make your function case insensitive (so users can input rock, ROCK, RocK or any other variation)
@@ -41,4 +41,18 @@ Assignment
 
 
 "Create repo with README.md and create index.html jscript.js and style.CSS Add project instructions to README.md ready for creating pseudo code"
+
+1 playerSelection = 'rock'
+computerSelection = randomSelection 'rock'
+player wins
+
+2 playerSelection = 'rock'
+computerSelection = randomSelection 'paper'
+player loses
+
+3 playerSelection = 'rock'
+computerSelection = randomSelection 'scissors'
+player wins
+
+"Pause for revision of functions returning a value in order to provide global scope This to solve the problem of accessing values for computerSelection Will then rework and clean up the code in jscript.js At present it is messy" 
 
