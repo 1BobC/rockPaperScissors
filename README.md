@@ -56,3 +56,5 @@ player wins
 
 "Pause for revision of functions returning a value in order to provide global scope This to solve the problem of accessing values for computerSelection Will then rework and clean up the code in jscript.js At present it is messy" 
 
+"Create indexC.html and jscriptC.js for revision exercises of function with return call" 
+
