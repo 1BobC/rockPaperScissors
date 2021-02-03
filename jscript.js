@@ -1,24 +1,22 @@
-const computerPlay = function() {
-//randomly return Rock or Paper or Scissors
-const shout = ['rock', 'paper', 'scissors'];
-const random = Math.floor(Math.random() * shout.length);
-    console.log(random, shout[random]);
-};
+// const computerPlay = function() {
+// //randomly return Rock or Paper or Scissors
+// const shout = ['rock', 'paper', 'scissors'];
+// const random = Math.floor(Math.random() * shout.length);
+    
+//     //console.log(random, shout[random]);
+//     return;
+// };
 
-computerSelection = computerPlay(); 
- console.log(computerSelection); 
+    
 
-//const playerSelection = "rock";
-// function playRound(playerSelection, computerSelection) {
-//     // your code here!
-//     if(computerSelection = "paper"){
-//     return("You Lose! Paper beats Rock");
-//     }
-//   }
+
+//     const playerSelection = computerPlay();
+//     const computerSelection = computerPlay;
+// // function playRound(playerSelection, computerSelection) {
+// //     // your code here!
   
-  
-  
-//   console.log(playRound(playerSelection, computerSelection));
+// //     } 
+//    console.log(playRound(playerSelection, computerSelection));
   
     
 
@@ -49,40 +47,38 @@ computerSelection = computerPlay();
 // myBigFunction();     //does not work, ReferenceError: myValue is not defined
 //                        pass the value into the function as a parameter, like this:
 
-// function computerPlay () {
-// //randomly return Rock or Paper or Scissors
-// const shout = ['rock', 'paper', 'scissors'];
-// const random = Math.floor(Math.random() * shout.length);
-//     console.log(random, shout[random]);
-// }
-// computerPlay();
+function computerPlay () {
+//randomly return Rock or Paper or Scissors
+const shout = ['rock', 'paper', 'scissors'];
+const random = Math.floor(Math.random() * shout.length);
+    //console.log(random, shout[random]);
+    return (random, shout[random]);
+}
+//computerPlay();
 
-              
-// function myBigFunction() {       
-//     let playerSelection = 'rock';
-//     let computerSelection = computerPlay();   
-//     let theirValue = 3;
-  
-//     subFunction1(playerSelection);
-//     subFunction2(computerSelection);
-//     subFunction3(theirValue);
-//   }
-  
-//   function subFunction1(value) {
-//     console.log(value);
-//   }
-  
-//   function subFunction2(value) {
-//     console.log(value);
-//   }
-  
-//   function subFunction3(value) {
-//     console.log(value);
-//   }
-
-//   myBigFunction();
-
-//the basic function
-//function displayMessage(){
+let playRound = function() {             
+//function myBigFunction() {       
+    let playerSelection = computerPlay();//'rock';
+    let computerSelection = computerPlay();   
     
-//}
+player1(playerSelection);  
+    //subFunction1(playerSelection);
+player2(computerSelection);
+    //subFunction2(computerSelection);
+   
+  }
+    function player1(value) {  
+  //function subFunction1(value) {
+    //console.log(value);
+    return(value);
+  }
+    function player2(value) {
+  //function subFunction2(value) {
+    //console.log(value);
+    return(value);
+  }
+
+    playRound();
+    console.log(playRound(player1(), player2()));
+    
+    //myBigFunction();

@@ -58,3 +58,4 @@ player wins
 
 "Create indexC.html and jscriptC.js for revision exercises of function with return call" 
 
+"Completed function return exercises on Ninja Udemy, MDN and javscript information as on indexC.html"
