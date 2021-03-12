@@ -1,2 +1,13 @@
-
+h2{
+    text-align: center;
+    padding: 5px;
+    color: darkred;
+    background-color: #ffd5e3;
+}
+form{
+    text-align: center;
+    padding: 5px;
+    color: darkred;
+    background-color: #ffd5e3;
+}
 
