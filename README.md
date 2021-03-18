@@ -61,3 +61,5 @@ player wins
 "Completed function return exercises on Ninja Udemy, MDN and javscript information as on indexC.html"
 
 "Completed code for one round of rock, paper, scissors in files index.html and jscript.js"
+"Still working on creating playerChoice from radio buttons"
+"Removed function revision Create new folder for function revision see the six ns_* folders"
