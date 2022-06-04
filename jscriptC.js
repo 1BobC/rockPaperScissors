@@ -1,4 +1,4 @@
-//ninja Ubung 1 nicht arbeit
+//ninja Ubung 1 nicht arbeit 
 // const calcArea = function(radius) {
 //     let area = 3.14 * radius**2;
 //     console.log(area);
@@ -6,6 +6,7 @@
 //     calcArea(5);         //can be called but not used
 //     console.log(area);  //cannot be used outside the function because area is a 
                             //locable variable accessible only within the function
+    //document.getElementById("finn1").innerHtml = area;
 
 //ninja Ubung 2 ist OK
 // const calcArea = function(radius) {
@@ -14,17 +15,21 @@
 // }
 //     const x = calcArea(5);
 //     console.log (x);
+//     document.getElementById("finn2").innerHTML = "Area is: " + x;
 
 //MDN Ubung 1 funkionert gut und so kann ich experimentiere ein bischen
-// function getRectArea(width, height) {
-//     if( width > 0 && height > 0){
-//         return width * height;
-//     }
-//     return 0;    
-// }    
-//     console.log(getRectArea(3,4));
-//     console.log(getRectArea(-3,4));
-//     console.log(getRectArea(53,54));
+function getRectArea(width, height) {
+    if( width > 0 && height > 0){
+        return width * height;
+    }
+    return 0;    
+}    
+    console.log(getRectArea(3,4));
+    document.getElementById("finn3").innerHTML = "Area is: " + (getRectArea(3,4));
+    console.log(getRectArea(-3,4));
+    document.getElementById("finn4").innerHTML = "Area is: " + (getRectArea(-3,4));
+    console.log(getRectArea(53,54));
+    document.getElementById("finn5").innerHTML = "Area is: " + (getRectArea(53,54));
 
 //MDN Ubung 2 function stops at the point return is called
 // function counter() {

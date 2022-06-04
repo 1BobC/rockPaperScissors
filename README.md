@@ -63,3 +63,5 @@ player wins
 "Completed code for one round of rock, paper, scissors in files index.html and jscript.js"
 "Still working on creating playerChoice from radio buttons"
 "Removed function revision Create new folder for function revision see the six ns_* folders"
+
+"4Jun22 Revise the function return exercises ninja 1 & 2, MDN 1"
