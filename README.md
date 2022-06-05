@@ -65,3 +65,4 @@ player wins
 "Removed function revision Create new folder for function revision see the six ns_* folders"
 
 "4Jun22 Revise the function return exercises ninja 1 & 2, MDN 1"
+"Add form to insert radius ninja 2 excercise"
