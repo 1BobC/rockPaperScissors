@@ -11,7 +11,6 @@
 //ninja Ubung 2 ist OK
 //Can I create form code for radius input ?
 
-
 // const calcArea = function(radius) {
 //     let area = 3.14 * radius**2;
 //     return area;
@@ -20,35 +19,36 @@
 //     console.log (x);
 //     document.getElementById("finn2").innerHTML = "Area is: " + x;
 
-const btn = document.getElementById('btn');
-const calc = document.getElementById('calc');
+// const btn = document.getElementById('btn');
+// const calc = document.getElementById('calc');
 
-function area() {
-    const radius = parseInt(document.getElementById('radius').value);
-    //const height = parseInt(document.getElementById('height').value);
-    const result = document.getElementById('result');
+// function area() {
+//     const radius = parseInt(document.getElementById('radius').value);
+//     //const height = parseInt(document.getElementById('height').value);
+//     const result = document.getElementById('result');
 
-    if (radius !== NaN) {
-        //let area = base/2 * height;
-        let area = 3.14 * radius**2;
-        result.value = area;
-        return false;
+//     if (radius !== NaN) {
+//         //let area = base/2 * height;
+//         let area = 3.14 * radius**2;
+//         result.value = area;
+//         return false;
 
-        } else {
-        alert("Enter Valid Number");
-        }
-    }   
-    calc.addEventListener('click', () => {
-        area();
-      });
-      btn.addEventListener('click', () => {
-        radius.value = " ";
-        //height.value = " ";
-        result.value = " ";
-      });
+//         } else {
+//         alert("Enter Valid Number");
+//         }
+//     }   
+//     calc.addEventListener('click', () => {
+//         area();
+//       });
+//       btn.addEventListener('click', () => {
+//         radius.value = " ";
+//         //height.value = " ";
+//         result.value = " ";
+//       });
 
 //MDN Ubung 1 funkionert gut und so kann ich experimentiere ein bischen
-//Und jetzt ich 
+//Und jetzt kann ich eine Eingabe formular für Breite und Höhe erstellen? 
+
 // function getRectArea(width, height) {
 //     if( width > 0 && height > 0){
 //         return width * height;
@@ -61,8 +61,38 @@ function area() {
 //     document.getElementById("finn4").innerHTML = "Area is: " + (getRectArea(-3,4));
 //     console.log(getRectArea(53,54));
 //     document.getElementById("finn5").innerHTML = "Area is: " + (getRectArea(53,54));
+    
+    
+    const btn = document.getElementById('btn');
+    const calc = document.getElementById('calc');
+    
+    function area() {
+        const width = parseInt(document.getElementById('width').value);
+        const height = parseInt(document.getElementById('height').value);
+        const result = document.getElementById('result');
+    
+        if (width && height !== NaN) {
+            let area = width * height;
+            result.value = area;
+            return false;
+    
+            } else {
+            alert("Enter Valid Number");
+            }
+        }   
+        calc.addEventListener('click', () => {
+            area();
+          });
+          btn.addEventListener('click', () => {
+            width.value = " ";
+            height.value = " ";
+            result.value = " ";
+          });
 
-//MDN Ubung 2 function stops at the point return is called
+
+
+
+    //MDN Ubung 2 function stops at the point return is called
 // function counter() {
 //     for (var count = 1; ; count++) { //beware infinite loop
 //         console.log(count + "A");      // up to 5
