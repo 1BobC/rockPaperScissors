@@ -63,48 +63,68 @@
 //     document.getElementById("finn5").innerHTML = "Area is: " + (getRectArea(53,54));
     
     
-    const btn = document.getElementById('btn');
-    const calc = document.getElementById('calc');
+//     const btn = document.getElementById('btn');
+//     const calc = document.getElementById('calc');
     
-    function area() {
-        const width = parseInt(document.getElementById('width').value);
-        const height = parseInt(document.getElementById('height').value);
-        const result = document.getElementById('result');
+//     function area() {
+//         const width = parseInt(document.getElementById('width').value);
+//         const height = parseInt(document.getElementById('height').value);
+//         const result = document.getElementById('result');
     
-        if (width && height !== NaN) {
-            let area = width * height;
-            result.value = area;
-            return false;
+//         if (width && height !== NaN) {
+//             let area = width * height;
+//             result.value = area;
+//             return false;
     
-            } else {
-            alert("Enter Valid Number");
-            }
-        }   
-        calc.addEventListener('click', () => {
-            area();
-          });
-          btn.addEventListener('click', () => {
-            width.value = " ";
-            height.value = " ";
-            result.value = " ";
-          });
+//             } else {
+//             alert("Enter Valid Number");
+//             }
+//         }   
+//         calc.addEventListener('click', () => {
+//             area();
+//           });
+//           btn.addEventListener('click', () => {
+//             width.value = " ";
+//             height.value = " ";
+//             result.value = " ";
+//           });
 
 
 
 
     //MDN Ubung 2 function stops at the point return is called
-// function counter() {
-//     for (var count = 1; ; count++) { //beware infinite loop
-//         console.log(count + "A");      // up to 5
-//             if( count === 5) {
-//                 return;
+    //using www.geeksforgeeks.org/how-to-make-animated-counter-using-javascript/
+    let counts=setInterval(updated);
+function updated() {
+    for (let count = 1; ; count++) { //beware infinite loop
+        console.log(count + "A");      // up to 5
+        document.getElementById("counter").innerHTML = (count + "A"); //added from Geeks code
+            if( count === 5) {
+                return;
+            }
+            {
+             clearInterval(counts);
+            }
+        
+            console.log(count + "B");  //up to 4 then A count 5
+    }
+            //tried return here and infinite loop kicked in!!!
+            console.log(count + "C");   //but C is untouchable
+}
+                updated ();
+
+//Using www.geeksforgeeks.org/how-to-make-animated-counter-using-javascript/
+// let counts=setInterval(updated);
+//         let upto=0;
+//         function updated(){
+//             let count= document.getElementById("counter");            
+//             count.innerHTML=++upto;
+//             if(upto===1000)            
+//             {
+//                 clearInterval(counts);
 //             }
-//             console.log(count + "B");  //up to 4 then A reaches 5
-//     }
-//             //tried return here and infinite loop kicked in!!!
-//             console.log(count + "C");   //but never reaches C
-// }
-//         counter ();
+//             console.log(upto);       //added simply to see if it worked
+//         }
 
 //MDN Ubung 3 syntax error return not in function 
 //can be looke up in MDN nder this heading
