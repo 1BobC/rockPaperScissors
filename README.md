@@ -68,3 +68,4 @@ player wins
 "Add form to insert radius ninja 2 excercise"
 "Add form to insert width and height to MDN Ubung 1"
 "Add animated counter to MDN Ubng 2 counter"
+"Add cheer word to DOM to MDN Ubung 3, add message and outer variable to DOM to javascriptinfo Functions Ubung 2 and 3"

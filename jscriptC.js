@@ -94,24 +94,24 @@
 
     //MDN Ubung 2 function stops at the point return is called
     //using www.geeksforgeeks.org/how-to-make-animated-counter-using-javascript/
-    let counts=setInterval(updated);
-function updated() {
-    for (let count = 1; ; count++) { //beware infinite loop
-        console.log(count + "A");      // up to 5
-        document.getElementById("counter").innerHTML = (count + "A"); //added from Geeks code
-            if( count === 5) {
-                return;
-            }
-            {
-             clearInterval(counts);
-            }
+//     let counts=setInterval(updated);
+// function updated() {
+//     for (let count = 1; ; count++) { //beware infinite loop
+//         console.log(count + "A");      // up to 5
+//         document.getElementById("counter").innerHTML = (count + "A"); //added from Geeks code
+//             if( count === 5) {
+//                 return;
+//             }
+//             {
+//              clearInterval(counts);
+//             }
         
-            console.log(count + "B");  //up to 4 then A count 5
-    }
-            //tried return here and infinite loop kicked in!!!
-            console.log(count + "C");   //but C is untouchable
-}
-                updated ();
+//             console.log(count + "B");  //up to 4 then A count 5
+//     }
+//             //tried return here and infinite loop kicked in!!!
+//             console.log(count + "C");   //but C is untouchable
+// }
+//                 updated ();
 
 //Using www.geeksforgeeks.org/how-to-make-animated-counter-using-javascript/
 // let counts=setInterval(updated);
@@ -126,21 +126,27 @@ function updated() {
 //             console.log(upto);       //added simply to see if it worked
 //         }
 
+
 //MDN Ubung 3 syntax error return not in function 
-//can be looke up in MDN nder this heading
+//can be looked up in MDN under this heading
 //     const cheer = function(score) {   //tried let and const instead of var - worked ok
-//         if (score === 147) {        //apparently easy to miss a curly brace 
-//         return 'Maximum';
+//         if (score === 23) {        //apparently easy to miss a curly brace 
+//         //return 'Maximum';
+//         return 'Mmmm...';
 //     }//; 
 //         if(score === 100) {
 //         return 'Century!';
 //     }
-//     console.log(cheer(147));
+//     console.log(cheer(23));
+//     document.getElementById("finn7").innerHTML = (cheer(23));
 //     console.log(cheer(100));
+//     document.getElementById("finn8").innerHTML = (cheer(100));
 // };
 //         cheer();
-        // cheer();
-        // cheer();
+//         cheer();
+//         cheer();
+
+
 
 //javascript.info Functions Ubung 1
 //function showMessage() {
@@ -149,14 +155,20 @@ function updated() {
 //     showMessage();
 //     showMessage();
 
+
 //javascript.info Functions Ubung 2
+//         let negation = ' No, you are not!';
 // function showMessage() {
-//     let message = "Hi, I'm javascript!";    //local variable
-//     //alert(message);
+//     let message = "Hi, I'm javascript!" + negation;    //local variable
+//     alert(message);
+
 //      console.log(message);
+//      document.getElementById("finn9").innerHTML = message;
+    
 // }
 //     showMessage();  //this one works
 //     alert(message); //error variable is local to the function
+
 
 //javascriptinfo Functions Ubung 3 function access to outer variable
 //     let userName = 'John';      //the function has access to this outer variable
@@ -164,6 +176,7 @@ function updated() {
 //     let message = "Hello, " + userName;
 //     console.log(message);
 //     alert(message);
+//     document.getElementById("finn10").innerHTML = message;
 // }
 //     showMessage();  //Hello John plus window Hello John
 
