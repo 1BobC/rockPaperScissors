@@ -181,17 +181,19 @@
 //     showMessage();  //Hello John plus window Hello John
 
 //javascriptinfo Functions Ubung 4 function can change outer variable
-//         let userName = 'John';       //global variable not recommended
-//     function showMessage() {
-//             userName = 'Bob';       //changes outer variable declararion
-//             let message = "Hello, " + userName;
-//             console.log(message);
-//     }
+        let userName = 'John';       //global variable not recommended
+    function showMessage() {
+            userName = 'Bob';       //changes outer variable declararion
+            let message = "Hello, " + userName;
+            console.log(message);
+     }
 //         //alert(userName);
-//         console.log(userName);          //displays outer variable name John
-//         showMessage();                  //function uses changed variable Bob
+         console.log(userName);          //displays outer variable name John
+           document.getElementById("finn11").innerHTML = "Global variable name is: " + userName;  
+        showMessage();                  //function call
 //         //alert(userName);
-//         console.log(userName);          //function changes outer variable name to Bob
+         console.log(userName);          //function changes outer variable name to Bob
+           document.getElementById("finn12").innerHTML = "Function variable name is: " + userName;
 
 //javascriptinfo Functions Ubung 5 declaring a variable outside and inside the function
         //         let userName = 'John';     //global variable not recommended
