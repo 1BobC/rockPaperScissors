@@ -76,7 +76,7 @@
 //             result.value = area;
 //             return false;
     
-//             } else {
+//             } else {const calc = document.getElementById('calc');
 //             alert("Enter Valid Number");
 //             }
 //         }   
@@ -181,12 +181,23 @@
 //     showMessage();  //Hello John plus window Hello John
 
 //javascriptinfo Functions Ubung 4 function can change outer variable
-        let userName = 'John';       //global variable not recommended
+//Add form to enter outer variable:
+        const btn = document.getElementById('btn');
+        const userName = document.getElementById('userName');
+        //let userName = 'John';       //global variable not recommended
     function showMessage() {
             userName = 'Bob';       //changes outer variable declararion
             let message = "Hello, " + userName;
             console.log(message);
      }
+     userName.addEventListener('click', () => {
+                showMessage();
+              });
+              btn.addEventListener('click', () => {
+                userName.value = " ";
+                //height.value = " ";
+                //result.value = " ";
+              });
 //         //alert(userName);
          console.log(userName);          //displays outer variable name John
            document.getElementById("finn11").innerHTML = "Global variable name is: " + userName;  

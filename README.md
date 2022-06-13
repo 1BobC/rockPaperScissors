@@ -71,3 +71,5 @@ player wins
 "Add cheer word to DOM to MDN Ubung 3, add message and outer variable to DOM to javascriptinfo Functions Ubung 2 and 3"
 
 "Add variable of inside and outside function to DOM, next add form to insert name in outside function"
+
+"Revert to coding game, Complete game to Foundations Project: Rock Paper Scissors!" 
