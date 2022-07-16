@@ -1,0 +1,31 @@
+/*  */
+h1{
+    text-align: center;
+    padding: 5px;
+    color: rgb(165, 74, 74);
+    background-color: #ffd5e3;
+}
+h2{
+    text-align: center;
+    padding: 5px;
+    color: rgb(177, 19, 19);
+    background-color: #ffd5e3;
+}
+form{
+    text-align: center;
+    padding: 5px;
+    color: darkred;
+    background-color: #ffd5e3;
+}
+h3{
+    text-align: center;
+    padding: 5px;
+    color: rgb(165, 74, 74);
+    /* background-color: #ffd5e3; */
+}
+p{
+    text-align: center;
+    padding: 5px;
+    color: rgb(90, 89, 89);
+    /* background-color: #ffd5e3; */
+}

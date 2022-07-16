@@ -73,3 +73,5 @@ player wins
 "Add variable of inside and outside function to DOM, next add form to insert name in outside function"
 
 "Revert to coding game, Complete game to Foundations Project: Rock Paper Scissors!" 
+
+"Learning how to create branch, amend code and add to master code!"
